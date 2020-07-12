@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
+    <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset=UTF-8>
+    <title>レイアウト自動作成ツール</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">〜画像の枚数、サイズによってレイアウトを変える〜</h1>
+        <div class="gallery-container">
+            <h1>・２枚（２種類）</h1>
+            <div class="contents">
+                <div class="content">
+                    <p>①横長の画像のみを投稿するとき</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo2-1-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo2-1"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo2-1-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo2-1"><img src="images/photo2.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>②少なくとも１枚、縦長の画像を投稿するとき</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo2-2-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo2-2"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo2-2-2-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo2-2"><img src="images/photo3.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>・3枚（３種類）</h1>
+            <div class="contents">
+                <div class="content">
+                    <p>①１枚目の画像が縦長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo3-1-1-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo3-1"><img src="images/photo4.jpg"></a></li>
+                            <li class="photo3-1-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo3-1"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo3-1-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo3-1"><img src="images/photo3.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>②１枚目の画像が横長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo3-2-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo3-2"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo3-2-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo3-2"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo3-2-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo3-2"><img src="images/photo3.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>③画像が３枚とも横長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo3-3-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo3-3"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo3-3-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo3-3"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo3-3-3-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo3-3"><img src="images/photo2.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>・4枚（５種類）</h1>
+            <div class="contents">
+                <div class="content">
+                    <p>①画像が４枚とも正方形の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo4-1-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo4-1"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo4-1-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo4-1"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo4-1-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-1"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-1-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo4-1"><img src="images/photo4.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>②１枚目が横長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo4-2-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo4-2"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo4-2-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo4-2"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo4-2-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-2"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-2-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo4-2"><img src="images/photo4.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>③１枚目が縦長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo4-3-1-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-3"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-3-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo4-3"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo4-3-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-3"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-3-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo4-3"><img src="images/photo4.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>④１枚目が横長かつ２,３,４枚目が縦長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo4-4-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo4-4"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo4-4-2-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-4"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-4-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-4"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-4-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo4-4"><img src="images/photo4.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>⑤１枚目が縦長かつ２,３,４枚目が横長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo4-5-1-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo4-5"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo4-5-2-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo4-5"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo4-5-3-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo4-5"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo4-5-4-li"><a href="images/photo5.jpg" class="js-smartPhoto"
+                                    data-group="photo4-5"><img src="images/photo5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>・5枚（４種類）</h1>
+            <div class="contents">
+                <div class="content">
+                    <p class="long-text1">①1,２枚目に縦長,横長の両方が存在し、</p>
+                    <p class="long-text2">３,４,5枚目に横長の画像が多く含まれている場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo5-1-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo5-1" data-group="photo5-4"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo5-1-2-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-1"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-1-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-1"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-1-4-li"><a href="images/photo6.jpg" class="js-smartPhoto"
+                                    data-group="photo5-1"><img src="images/photo6.jpg"></a></li>
+                            <li class="photo5-1-5-li"><a href="images/photo5.jpg" class="js-smartPhoto"
+                                    data-group="photo5-1"><img src="images/photo5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p class="long-text1">①1,２枚目に縦長,横長の両方が存在し、</p>
+                    <p class="long-text2">３,４,5枚目に縦長の画像が多く含まれている場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo5-2-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo5-2"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo5-2-2-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-2"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-2-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-2"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-2-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo5-2"><img src="images/photo4.jpg"></a></li>
+                            <li class="photo5-2-5-li"><a href="images/photo5.jpg" class="js-smartPhoto"
+                                    data-group="photo5-2"><img src="images/photo5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>③１,２枚目が縦長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo5-3-1-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-3"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-3-2-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo5-3"><img src="images/photo4.jpg"></a></li>
+                            <li class="photo5-3-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-3"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-3-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo5-3"><img src="images/photo4.jpg"></a></li>
+                            <li class="photo5-3-5-li"><a href="images/photo5.jpg" class="js-smartPhoto"
+                                    data-group="photo5-3"><img src="images/photo5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>④１,２枚目が横長の場合</p>
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo5-4-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo5-4"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo5-4-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo5-4"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo5-4-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo5-4"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo5-4-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo5-4"><img src="images/photo4.jpg"></a></li>
+                            <li class="photo5-4-5-li"><a href="images/photo5.jpg" class="js-smartPhoto"
+                                    data-group="photo5-4"><img src="images/photo5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>・6枚以上（１種類）</h1>
+            <div class="contents">
+                <div class="content">
+                    <div class="js-gallery">
+                        <ul>
+                            <li class="photo6-1-1-li"><a href="images/photo1.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo1.jpg"></a></li>
+                            <li class="photo6-1-2-li"><a href="images/photo2.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo2.jpg"></a></li>
+                            <li class="photo6-1-3-li"><a href="images/photo3.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo3.jpg"></a></li>
+                            <li class="photo6-1-4-li"><a href="images/photo4.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo4.jpg"></a></li>
+                            <li class="photo6-1-5-li"><a href="images/photo5.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo5.jpg"></a></li>
+                            <li class="photo6-1-6-li"><a href="images/photo6.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo6.jpg"></a></li>
+                            <li class="photo6-1-7-li"><a href="images/photo7.jpg" class="js-smartPhoto"
+                                    data-group="photo6"><img src="images/photo6.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>・入力場所</h1>
+            <div class="contents">
+                <div class="content">
+                    <p>※条件に合わせてレイアウトが表示されます</p>
+                    <div class="js-gallery" id="js-gallery">
+                        <ul>
+                            <li><a href="images/photo1.jpg" class="js-smartPhoto" data-group="photo7"><img
+                                        src="images/photo1.jpg"></a></li>
+                            <li><a href="images/photo3.jpg" class="js-smartPhoto" data-group="photo7"><img
+                                        src="images/photo3.jpg"></a></li>
+                            <li><a href="images/photo2.jpg" class="js-smartPhoto" data-group="photo7"><img
+                                        src="images/photo2.jpg"></a></li>
+                            <li><a href="images/photo2.jpg" class="js-smartPhoto" data-group="photo7"><img
+                                        src="images/photo2.jpg"></a></li>
+                            <li><a href="images/photo2.jpg" class="js-smartPhoto" data-group="photo7"><img
+                                        src="images/photo2.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--
+    <a href="https://appleple.github.io/SmartPhoto/assets/images/large-kuma.jpg" class="js-smartPhoto" data-caption="bear" data-id="bear" data-group="animal">
+    <img src="https://appleple.github.io/SmartPhoto/assets/images/kuma.jpg" />
+    </a>
+-->
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="smartphoto.js"></script>
+</body>
+
+</html>

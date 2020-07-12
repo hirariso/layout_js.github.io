@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/*基本設定*/
+
+.container{
+    width:auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.gallery-container{
+    width: 90%;
+    margin:0 auto;
+}
+
+.gallery-container h1{
+    border-bottom:1px solid grey;
+    border-top:1px solid grey;
+}
+
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.content{
+    width: 33.3333%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media(min-width: 640px) and (max-width:1024px){
+    .gallery-container{
+        width: 100%;
+    }
+
+    .content{
+        width: 50%;
+    }
+}
+
+@media(max-width:639px){
+    .gallery-container{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .content{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+}
+
+
+ul{
+    padding:0;
+}
+
+.js-gallery{
+    font-size: 0;
+    padding-right: 9px;
+}
+
+.js-gallery ul{
+    display: grid;
+    grid-template-rows: 100px 50px 50px 100px;
+    grid-template-columns: 100px 50px 50px 100px;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+}
+
+.js-gallery li{
+    list-style: none;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*２枚のとき*/
+
+/*その１*/
+
+.photo2-1-1-li{
+    grid-row: 1/3;
+    grid-column: 1/5;
+}
+
+.photo2-1-2-li{
+    grid-row: 3/5;
+    grid-column: 1/5;
+}
+
+/*その２*/
+
+.photo2-2-1-li{
+    grid-row: 1/5;
+    grid-column: 1/3;
+}
+.photo2-2-2-li{
+    grid-row: 1/5;
+    grid-column: 3/5;
+}
+
+
+
+/*3枚のとき*/
+
+/*その１*/
+
+.photo3-1-1-li{
+    grid-row: 1/5;
+    grid-column: 1/3;
+}
+
+.photo3-1-2-li{
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+.photo3-1-3-li{
+    grid-row: 3/5;
+    grid-column: 3/5;
+}
+
+
+/*その２*/
+
+.photo3-2-1-li{
+    grid-row: 1/3;
+    grid-column: 1/5;
+}
+
+.photo3-2-2-li{
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+
+.photo3-2-3-li{
+    grid-row: 3/5;
+    grid-column: 3/5;
+}
+
+
+/*その３*/
+
+.photo3-3-1-li{
+    grid-row: 1/4;
+    grid-column: 1/5;
+}
+
+.photo3-3-2-li{
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+.photo3-3-3-li{
+    grid-row: 4/5;
+    grid-column: 3/5;
+}
+
+/*４枚のとき*/
+
+/*その１*/
+
+.photo4-1-1-li{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+.photo4-1-2-li{
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+.photo4-1-3-li{
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+.photo4-1-4-li{
+    grid-row: 3/5;
+    grid-column: 3/5;
+}
+
+
+/*その２*/
+
+.photo4-2-1-li{
+    grid-row: 1/4;
+    grid-column: 1/5;
+}
+.photo4-2-2-li{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.photo4-2-3-li{
+    grid-row: 4/5;
+    grid-column: 2/4;
+}
+.photo4-2-4-li{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+/*その３*/
+
+.photo4-3-1-li{
+    grid-row: 1/5;
+    grid-column: 1/4;
+}
+.photo4-3-2-li{
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+.photo4-3-3-li{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.photo4-3-4-li{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+/*その４*/
+.photo4-4-1-li{
+    grid-row: 1/3;
+    grid-column: 1/5;
+}
+.photo4-4-2-li{
+    grid-row: 3/5;
+    grid-column: 1/2;
+}
+.photo4-4-3-li{
+    grid-row: 3/5;
+    grid-column: 2/4;
+}
+.photo4-4-4-li{
+    grid-row: 3/5;
+    grid-column: 4/5;
+}
+
+
+/*その５*/
+
+.photo4-5-1-li{
+    grid-row: 1/5;
+    grid-column: 1/3;
+}
+.photo4-5-2-li{
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+.photo4-5-3-li{
+    grid-row: 2/4;
+    grid-column: 3/5;
+}
+.photo4-5-4-li{
+    grid-row: 4/5;
+    grid-column: 3/5;
+}
+
+/*５枚のとき*/
+
+.long-text1{
+    margin-bottom: 0;
+}
+
+.long-text2{
+    margin-top: 0;
+}
+
+/*その１*/
+
+.photo5-1-1-li{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.photo5-1-2-li{
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+.photo5-1-3-li{
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+.photo5-1-4-li{
+    grid-row: 2/4;
+    grid-column: 3/5;
+}
+.photo5-1-5-li{
+    grid-row: 4/5;
+    grid-column: 3/5;
+}
+
+/*その２*/
+
+.photo5-2-1-li{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.photo5-2-2-li{
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+.photo5-2-3-li{
+    grid-row: 3/5;
+    grid-column: 1/2;
+}
+.photo5-2-4-li{
+    grid-row: 3/5;
+    grid-column: 2/4;
+}
+.photo5-2-5-li{
+    grid-row: 3/5;
+    grid-column: 4/5;
+}
+
+/*その3*/
+
+.photo5-3-1-li{
+    grid-row: 1/4;
+    grid-column: 1/3;
+}
+.photo5-3-2-li{
+    grid-row: 1/4;
+    grid-column: 3/5;
+}
+.photo5-3-3-li{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.photo5-3-4-li{
+    grid-row: 4/5;
+    grid-column: 2/4;
+}
+.photo5-3-5-li{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+/*その４*/
+
+.photo5-4-1-li{
+    grid-row: 1/3;
+    grid-column: 1/4;
+}
+.photo5-4-2-li{
+    grid-row: 3/5;
+    grid-column: 1/4;
+}
+.photo5-4-3-li{
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+.photo5-4-4-li{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.photo5-4-5-li{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+/*６枚以上の時*/
+
+.photo6-1-1-li{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.photo6-1-2-li{
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+.photo6-1-3-li{
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+.photo6-1-4-li{
+    grid-row: 2/4;
+    grid-column: 3/5;
+}
+.photo6-1-5-li{
+    grid-row: 4/5;
+    grid-column: 3/5;
+}
+.photo6-1-6-li,.photo6-1-7-li{
+    display: none;
+}
